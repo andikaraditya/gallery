@@ -1,5 +1,14 @@
+import fs from "fs"
+
+type ImageGallery = {
+  title: string
+  src: string
+  slug: string
+  description: string
+}
+
 export default function Home() {
-  const galery = [1, 9, 4, 2, 8, 3, 2, 4, 4, 10, 3, 9, 4, 6, 9, 9, 4, 2, 5]
+  const galery: ImageGallery[] = JSON.parse(fs.readFileSync("data/main.json", "utf-8"))
   return (
     <main className="bg-gray-100 min-h-screen">
       <div className="w-[95%] mx-auto border-b-4 border-slate-900 py-11 mb-12">
@@ -7,13 +16,11 @@ export default function Home() {
           Lightstation Galery
         </h1>
       </div>
-      <div className="md:columns-2 lg:columns-4 gap-8 space-y-8 w-[95%] mx-auto">
+      <div className="md:columns-2 md:gap-6 md:space-y-6 lg:columns-4 lg:gap-8 lg:space-y-8 w-[95%] mx-auto">
         {galery.map((el, index) => {
-          const title = `Lorem Ipsum ${index}`
-          const description =
-            "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
-          const src = el % 2 === 0 ? "./tall.png" : "./wide.png"
-          return <ImageItem src={src} title={title} description={description} key={index} />
+          return (
+            <ImageItem src={el.src} title={el.title} description={el.description} key={index} />
+          )
         })}
       </div>
     </main>
@@ -30,11 +37,11 @@ function ImageItem({
   description: string
 }) {
   return (
-    <div className="group hover:cursor-pointer relative overflow-hidden">
+    <div className="group hover:cursor-pointer relative rounded-2xl overflow-hidden">
       <img className="w-full" src={src} alt="" />
-      <div className="group-hover:block group-hover:absolute ease-in-out hidden bottom-0 p-3 bg-slate-900/20">
-        <h2 className="text-2xl font-bold">{title}</h2>
-        <p className="line-clamp-3">{description}</p>
+      <div className="group-hover:block group-hover:absolute ease-in-out hidden bottom-0 p-3 bg-slate-900/50 backdrop-blur-[1px]">
+        <h2 className="text-2xl text-white capitalize font-bold">{title}</h2>
+        <p className="line-clamp-3 text-white">{description}</p>
       </div>
     </div>
   )

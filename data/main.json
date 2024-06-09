@@ -1,0 +1,62 @@
+[
+  {
+    "title": "aniva",
+    "src": "./img/aniva.jpg",
+    "slug": "aniva",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "cornwall",
+    "src": "./img/cornwall.jpg",
+    "slug": "cornwall",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "marblehead",
+    "src": "./img/marblehead.jpg",
+    "slug": "marblehead",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "old-stone-tower",
+    "src": "./img/old-stone-tower.jpg",
+    "slug": "old-stone-tower",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "petit-minou",
+    "src": "./img/petit-minou.jpg",
+    "slug": "petit-minou",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "pigeon-point",
+    "src": "./img/pigeon-point.jpg",
+    "slug": "pigeon-point",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "portland-head",
+    "src": "./img/portland-head.jpg",
+    "slug": "portland-head",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "seashore",
+    "src": "./img/seashore.jpg",
+    "slug": "seashore",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "spain",
+    "src": "./img/spain.jpg",
+    "slug": "spain",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  },
+  {
+    "title": "sunset",
+    "src": "./img/sunset.jpg",
+    "slug": "sunset",
+    "description": "Lorem ipsum dolor laboriosam deleniti aperiam ab veniam sint non cumque quis tempore cupiditate. Sint libero voluptas veniam at reprehenderit, veritatis harum et rerum."
+  }
+]
