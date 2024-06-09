@@ -1,7 +1,7 @@
 import fs from "fs"
 import Link from "next/link"
 
-type ImageGallery = {
+export type ImageGallery = {
   title: string
   src: string
   slug: string

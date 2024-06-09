@@ -1,4 +1,5 @@
 import fs from "fs"
+import { ImageGallery } from "../page"
 
 function getgalleryContent(slug: string) {
   const imgFolder = "./img/"
@@ -6,6 +7,15 @@ function getgalleryContent(slug: string) {
   return {
     src,
   }
+}
+
+export async function generateStaticParams() {
+  const galery: ImageGallery[] = JSON.parse(fs.readFileSync("data/main.json", "utf-8"))
+  return galery.map((el) => {
+    return {
+      slug: el.slug,
+    }
+  })
 }
 
 function ItemPage(props: any) {
